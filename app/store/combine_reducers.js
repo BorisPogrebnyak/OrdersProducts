@@ -2,7 +2,7 @@
 
 import { combineReducers } from "redux";
 
-import { currentDateReducer } from "./current_date/reducers";
+import { currentDateReducer } from "./topMenu/reducers";
 
 export default combineReducers({
   currentDate: currentDateReducer

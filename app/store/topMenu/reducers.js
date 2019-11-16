@@ -1,6 +1,6 @@
 "use strict";
 
-import { CHANGE_CURRENT_DATE } from "./actions";
+import { CHANGE_CURRENT_DATE } from "./nameActions";
 
 const initialCurrentDate = {
   currentDate: new Date()

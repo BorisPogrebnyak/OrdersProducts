@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-export const CHANGE_CURRENT_DATE = 'CHANGE_CURRENT_DATE';
+import { CHANGE_CURRENT_DATE } from "./nameActions";
 
 export const changeCurrentDate = currentDate => ({
   type: CHANGE_CURRENT_DATE,
