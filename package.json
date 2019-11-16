@@ -1,0 +1,39 @@
+{
+  "author": "Boris Pogrebnyak",
+  "name": "OrdersAndProducts",
+  "description": "Test Task",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "webpack-dev-server --mode development --inline --hot --devtool source-map",
+    "build": "webpack --mode production --devtool source-map"
+  },
+  "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "react": "*",
+    "react-dom": "*",
+    "react-redux": "*",
+    "redux": "*",
+    "webpack": "^4.41.2",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "devDependecies": {
+    "@babel/core": "*",
+    "babel-loader": "*",
+    "@babel/preset-env": "*",
+    "@babel/preset-react": "*",
+    "react": "*",
+    "react-dom": "*",
+    "redux": "*",
+    "react-redux": "*",
+    "webpack": "*",
+    "webpack-cli": "*",
+    "webpack-dev-server": "*"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.10"
+  }
+}
