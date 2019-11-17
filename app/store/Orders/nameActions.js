@@ -1,3 +1,3 @@
 "use strict";
 
-export const CHANGE_ORDER = "CHANGE_ORDER";
+export const CHANGE_ORDERS = "CHANGE_ORDERS";

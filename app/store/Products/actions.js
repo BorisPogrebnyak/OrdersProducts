@@ -1,8 +1,8 @@
 "use strict";
 
-import { CHANGE_PRODUCT } from "./nameActions";
+import { CHANGE_PRODUCTS } from "./nameActions";
 
-export const changeProduct = product => ({
-  type: CHANGE_PRODUCT,
-  product
+export const changeProduct = products => ({
+  type: CHANGE_PRODUCTS,
+  products
 });

@@ -1,15 +1,37 @@
 "use strict";
 
-import { CHANGE_ORDER } from "./nameActions";
+import { CHANGE_ORDERS } from "./nameActions";
 
-const initialOrder = {
-  currentDate: new Date()
+const initialOrders = {
+  orders: [
+    {
+      id: 1,
+      title: 'Order 1',
+      date: '2017-06-29 12:09:33',
+      description: 'desc',
+      get products() { return products }
+    },
+    {
+      id: 2,
+      title: 'Order 2',
+      date: '2017-06-29 12:09:33',
+      description: 'desc',
+      get products() { return products }
+    },
+    {
+      id: 3,
+      title: 'Order 3',
+      date: '2017-06-29 12:09:33',
+      description: 'desc',
+      get products() { return products },
+    }
+  ]
 };
 
-export const orderReducer = (state = initialOrder, action) => {
+export const ordersReducer = (state = initialOrders, action) => {
   switch (action.type) {
-    case CHANGE_ORDER:
-      return { ...state, order: action.order };
+    case CHANGE_ORDERS:
+      return { ...state, orders: action.orders };
   }
 
   return state;

@@ -1,8 +1,8 @@
 "use strict";
 
-import { CHANGE_ORDER } from "./nameActions";
+import { CHANGE_ORDERS } from "./nameActions";
 
-export const changeOrder = order => ({
-  type: CHANGE_ORDER,
-  order
+export const changeOrder = orders => ({
+  type: CHANGE_ORDERS,
+  orders
 });

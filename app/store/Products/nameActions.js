@@ -1,3 +1,3 @@
 "use strict";
 
-export const CHANGE_PRODUCT = "CHANGE_PRODUCT";
+export const CHANGE_PRODUCTS = "CHANGE_PRODUCTS";
