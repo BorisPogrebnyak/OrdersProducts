@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 
 import { configureStore } from "./store/configure_store";
 import TopMenuContainer from "./components/TopMenuContainer";
+import NavigationMenuContainer from "./components/NavigationMenuContainer";
 
 const store = configureStore();
 
@@ -15,4 +16,12 @@ ReactDOM.render(
     <TopMenuContainer />
   </Provider>,
   document.getElementById("topMenu")
+);
+
+// Вывод меню навигации
+ReactDOM.render(
+  <Provider store={store}>
+    <NavigationMenuContainer />
+  </Provider>,
+  document.getElementById("navigationMenu")
 );

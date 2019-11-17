@@ -9,6 +9,9 @@ module.exports = {
     publicPath: '/public/',
     filename: 'bundle.js' // Название создаваемого файла
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   module: {
     rules: [ // Загрузчик для .jsx
       {
