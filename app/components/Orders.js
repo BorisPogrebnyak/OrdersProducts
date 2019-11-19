@@ -2,13 +2,18 @@
 
 import React, { Component } from "react";
 
+import OrdersTableHeader    from './OrdersTableHeader';
+import OrdersRowContainer   from './OrdersRowContainer';
+
 export default class Orders extends Component {
   render() {
-console.log('this.props.orders:', this.props.orders);
     return (
-      <p>
-        {this.props.orders[0].title}
-      </p>
+      <table>
+        <OrdersTableHeader />
+        <tbody>
+          {Array.from(this.props.orders, currentOrder => <OrdersRowContainer order = {currentOrder} />)}
+        </tbody>
+      </table>
     );
   }
 }

@@ -1,6 +1,6 @@
 "use strict";
 
-import { combineReducers } from "redux";
+import { combineReducers }    from "redux";
 
 import { currentDateReducer } from "./topMenu/reducers";
 import { ordersReducer }      from './Orders/reducers';

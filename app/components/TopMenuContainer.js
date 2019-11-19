@@ -1,9 +1,9 @@
 "use strict";
 
-import React, { Component } from "react";
-import { connect } from "react-redux";
+import React, { Component }  from "react";
+import { connect }           from "react-redux";
 
-import TopMenu from "./TopMenu";
+import TopMenu               from "./TopMenu";
 import { changeCurrentDate } from "../store/topMenu/actions";
 
 class TopMenuContainer extends Component {
@@ -31,7 +31,7 @@ class TopMenuContainer extends Component {
   }
 
   render() {
-    return <TopMenu currentDate={this.props.currentDate} />;
+    return <TopMenu currentDate = {this.props.currentDate} />;
   }
 }
 
