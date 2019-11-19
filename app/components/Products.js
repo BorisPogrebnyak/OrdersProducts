@@ -6,7 +6,7 @@ export default class Products extends Component {
   render() {
     return (
       <p>
-        Products
+        {this.props.products[0].title}
       </p>
     );
   }

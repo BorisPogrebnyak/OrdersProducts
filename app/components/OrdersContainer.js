@@ -8,8 +8,12 @@ import Orders from "./Orders";
 class OrdersContainer extends Component {
 
   render() {
-    return <Orders />;
+    return <Orders orders = {this.props.orders} />;
   }
 }
 
-export default connect(null, null)(OrdersContainer);
+const mapStateToProps = state => ({
+  orders: state.orders.orders,
+});
+
+export default connect(mapStateToProps)(OrdersContainer);

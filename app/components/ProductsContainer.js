@@ -8,8 +8,12 @@ import Products from "./Products";
 class ProductsContainer extends Component {
 
   render() {
-    return <Products />;
+    return <Products products = {this.props.products} />;
   }
 }
 
-export default connect(null, null)(ProductsContainer);
+const mapStateToProps = state => ({
+  products: state.products.products,
+});
+
+export default connect(mapStateToProps)(ProductsContainer);
